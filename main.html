@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSP Visualization with Distance Input</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+       
+    </style>
+</head>
+<body> 
+
+    <h1>Traveling Salesman Problem (TSP) Visualization</h1>
+    
+    <div id="controls">
+        <label for="numCities">Enter number of cities: </label>
+        <input type="number" id="numCities"  min="2" >
+        
+        <button onclick="generateDistanceInputs()">Proceed</button>
+    </div>
+
+    <div id="distanceInputs"></div>
+    <div id="startButtonContainer">
+        <button onclick="startTSP()" style="display: none;" id="startButton">Start TSP</button>
+    </div>
+
+    <canvas id="tspCanvas" width="800" height="500"></canvas>
+    <div id="distanceOutput"></div>
+    <div id="shortestDistance"></div>
+    
+
+</body>
+</html>
+<script src="script.js"></script>

@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+h1 {
+    color: #333;
+}
+#controls, #distanceInputs {
+    margin-bottom: 20px;
+}
+canvas {
+    border: 1px solid black;
+    background-color: white;
+}
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #218838;
+}
+#distanceOutput, #shortestDistance {
+    margin-top: 20px;
+    text-align: left;
+    display: inline-block;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+#shortestDistance {
+    font-weight: bold;
+    color: red;
+}
+.distance-input {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 2px;
+}
+#startButtonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
